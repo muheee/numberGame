@@ -1,6 +1,4 @@
-
 package numbergame;
-
 import java.util.Scanner;
 import java.util.Random;
 
@@ -31,8 +29,7 @@ public class NumberGame {
                 int userGuess = scanner.nextInt();
                 
                 if (userGuess == targetNumber) {
-                    System.out.println("Congratulations! You've guessed the correct number " + targetNumber +
-                                       " in " + attempts + " attempts!");
+                    System.out.println("Congratulations! You've guessed the correct number " + targetNumber + " in " + attempts + " attempts!");
                     break;
                 } else if (userGuess < targetNumber) {
                     System.out.println("Too low! Try a higher number.");
@@ -47,7 +44,6 @@ public class NumberGame {
                 break;
             }
         }
-        
         System.out.println("Game over! You played " + totalRounds + " rounds and took " + totalAttempts + " total attempts.");
     }
 }
